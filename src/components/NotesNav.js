@@ -29,15 +29,14 @@ function NotesNav(){
               <a className="nav-link active" aria-current="page" href="/new">Add Note</a>
             </li>
             <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/search">Search Notes</a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/profile">Update Profile</a>
             </li>
-            <button className="btn btn-outline-success me-2" type="button" onClick={handleSignOut}>Sign Out</button>
           </ul>
         </div>
-        <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
+        <button className="btn btn-outline-success me-2" type="button" onClick={handleSignOut}>Sign Out</button>
       </div>
     </nav>
   </>)

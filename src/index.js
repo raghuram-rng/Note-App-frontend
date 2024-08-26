@@ -12,6 +12,7 @@ import NewNote from './components/NewNote';
 import NotesList from './components/NotesList';
 import UpdateNote from './components/UpdateNote';
 import UpdateProfile from './components/UpdateProfile';
+import SearchNotes from './components/SearchNotes';
 
 
 const router = createBrowserRouter([{
@@ -41,6 +42,10 @@ const router = createBrowserRouter([{
   {
     path: '/profile',
     element: <UpdateProfile></UpdateProfile>
+  },
+  {
+    path: '/search',
+    element: <SearchNotes></SearchNotes>
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
