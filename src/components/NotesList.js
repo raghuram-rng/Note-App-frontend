@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NotesNav from './NotesNav';
-import DeleteNoteButton from './DeleteNoteButton';
 import { useNavigate } from "react-router-dom";
 
 function NotesList() {
