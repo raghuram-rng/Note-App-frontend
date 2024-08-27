@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 
 function NotesNav(){
-
+  const userLocal = localStorage.getItem('user');
+  const userObject = JSON.parse(userLocal);
   const navigate = useNavigate();
   function handleSignOut() {
     // Remove user object from localStorage
@@ -17,6 +18,7 @@ function NotesNav(){
   <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="/notes">NotesApp</a>
+        <button type="button" class="btn btn-secondary">{userObject.name}</button>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -36,7 +38,9 @@ function NotesNav(){
             </li>
           </ul>
         </div>
+        <>
         <button className="btn btn-outline-success me-2" type="button" onClick={handleSignOut}>Sign Out</button>
+        </>     
       </div>
     </nav>
   </>)
