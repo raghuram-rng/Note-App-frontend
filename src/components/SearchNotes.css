@@ -1,0 +1,80 @@
+/* SearchNotes.css */
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-form {
+  width: 100%;
+  max-width: 600px; /* Match with the card width in the notes list */
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;
+  margin-bottom: 20px; /* Space below the form */
+}
+
+.input-group {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.input-group .form-control {
+  border-radius: 4px; /* Rounded corners for the input field */
+  margin-right: 10px; /* Space between input and button */
+}
+
+.input-group .btn-primary {
+  border-radius: 4px; /* Rounded corners for the button */
+}
+
+.search-results {
+  width: 100%;
+  max-width: 600px; /* Match width with the search form */
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.search-results .list-group-item {
+  border: 1px solid #e9ecef; /* Light border color */
+  border-radius: 4px; /* Rounded corners for list items */
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.card {
+  border: 1px solid #e9ecef; /* Light border color for the card */
+  border-radius: 4px; /* Rounded corners for the card */
+  width: 100%; /* Full width of the container */
+}
+
+.card-body {
+  padding: 20px; /* Padding inside the card */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Slightly larger font for the title */
+}
+
+.card-text {
+  font-size: 1rem; /* Font size for the content */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary color */
+  border-color: #007bff; /* Primary border color */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3; /* Darker blue border on hover */
+}
+
+@media (max-width: 576px) {
+  .search-form {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}

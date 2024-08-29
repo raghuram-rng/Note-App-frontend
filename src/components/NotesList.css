@@ -1,0 +1,100 @@
+/* Container for Notes List */
+.notes-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all child elements horizontally */
+  justify-content: flex-start; /* Align items to the top of the container */
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: none; /* Remove shadow */
+  width: 100%; /* Full width of the container */
+  max-width: 800px; /* Limit max width */
+  margin: 0 auto; /* Center horizontally */
+  height: auto; /* Adjust height for proper content visibility */
+  min-height: 100vh; /* Ensure minimum height for centering */
+}
+
+/* Heading Styling */
+.notes-list-container h2 {
+  font-size: 2rem; /* Larger font size for visibility */
+  margin-bottom: 20px; /* Add some space below the heading */
+  text-align: center; /* Center-align the text */
+  color: #333; /* Dark color for better visibility */
+}
+
+/* Notes List Styling */
+.notes-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  width: 100%; /* Full width of the container */
+  display: flex; /* Flexbox for centering items */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center items horizontally */
+  margin-top: 20px; /* Space from the heading */
+}
+
+/* Individual Note Item */
+.notes-list-item {
+  margin-bottom: 20px; /* Space between notes */
+  width: 100%; /* Full width for each item */
+  display: flex;
+  justify-content: center; /* Center cards horizontally */
+}
+
+/* Card Styling */
+.card {
+  width: 75%; /* Adjust width to center the card */
+  max-width: 500px; /* Limit max width */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  padding: 20px; /* Padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Card Text */
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #555; /* Gray color for text */
+}
+
+/* Edit Note Button */
+.btn-edit {
+  background-color: #007bff; /* Bootstrap Primary Color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-edit:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Unauthorized Message */
+.unauthorized-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.unauthorized-container a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,53 @@
+/* NewNote.css */
+
+.newnote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Center vertically */
+  padding: 20px;
+}
+
+.newnote-form {
+  width: 100%;
+  max-width: 600px; /* Restrict form width */
+  padding: 30px;
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.newnote-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark color for the title */
+}
+
+.form-control-lg {
+  border-radius: 4px; /* Rounded corners for input fields */
+}
+
+textarea.form-control {
+  border-radius: 4px; /* Rounded corners for the textarea */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary color */
+  border-color: #007bff; /* Primary border color */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3; /* Darker blue border on hover */
+}
+
+.mb-3 {
+  margin-bottom: 20px; /* Spacing between input fields */
+}
+
+@media (max-width: 576px) {
+  .newnote-form {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}

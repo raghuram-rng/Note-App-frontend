@@ -1,0 +1,45 @@
+/* NotesNav.css */
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-nav {
+  flex-grow: 1;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-text {
+  margin-right: 1rem; /* Space between the username and the button */
+}
+
+.btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    margin-top: 1rem;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.ms-auto {
+  margin-left: auto; /* Pushes the content to the right */
+}
